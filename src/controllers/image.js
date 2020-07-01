@@ -31,7 +31,7 @@ ctrl.create = (req, res) => {
           description: req.body.description,
         });
         const imageSaved = await newImg.save();
-        res.redirect('/images');
+        res.redirect('/images/:image_id');
       } else {
         await fs.unlink(imageTempPath);
         res.status(500).json({ error: 'Only images are allowed' });
