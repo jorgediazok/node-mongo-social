@@ -1,7 +1,7 @@
+const fs = require('fs-extra');
 const path = require('path');
 const { randomNumber } = require('../helpers/libs');
-const fs = require('fs-extra');
-const { Image } = require('../models/index');
+const { Image } = require('../models');
 const image = require('../models/image');
 
 const ctrl = {};
