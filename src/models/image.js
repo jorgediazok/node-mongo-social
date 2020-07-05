@@ -1,5 +1,3 @@
-//Creating the models
-
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const path = require('path');
@@ -10,7 +8,7 @@ const ImageSchema = new Schema({
   filename: { type: String },
   views: { type: Number, default: 0 },
   likes: { type: Number, default: 0 },
-  timeStamp: { type: Date, default: Date.now },
+  timestamp: { type: Date, default: Date.now },
 });
 
 ImageSchema.virtual('uniqueId').get(function () {
